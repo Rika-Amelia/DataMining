@@ -1,0 +1,25 @@
+Target: priority
+Accuracy: 0.2137
+Precision macro: 0.2085
+Recall macro: 0.2471
+F1-score macro: 0.1534
+
+              precision    recall  f1-score   support
+
+        high       0.21      0.21      0.21       181
+         low       0.22      0.73      0.34       173
+      normal       0.33      0.01      0.02       387
+      urgent       0.07      0.03      0.05        59
+
+    accuracy                           0.21       800
+   macro avg       0.21      0.25      0.15       800
+weighted avg       0.26      0.21      0.13       800
+
+Confusion matrix (baris=aktual, kolom=prediksi):
+                Prediksi: high  Prediksi: low  Prediksi: normal  Prediksi: urgent
+Aktual: high                38            128                 4                11
+Aktual: low                 39            127                 2                 5
+Aktual: normal              91            282                 4                10
+Aktual: urgent              13             42                 2                 2
+
+Interpretasi: accuracy adalah proporsi prediksi yang benar. Precision menunjukkan ketepatan prediksi suatu kelas; recall menunjukkan data kelas yang berhasil ditemukan; F1-score merangkum precision dan recall. Nilai macro memberi bobot sama kepada setiap kelas. Pada confusion matrix, nilai diagonal menunjukkan prediksi benar, sedangkan nilai di luar diagonal menunjukkan kelas yang tertukar.

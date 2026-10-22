@@ -1,0 +1,3 @@
+Model berhasil dilatih dengan target 'priority'.
+Accuracy: 0.2137
+Gunakan laporan metrik lengkap dan confusion matrix untuk evaluasi.
